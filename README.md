@@ -1,4 +1,5 @@
 # mypkg
+[![test](https://github.com/Namashikate/mypkg/actions/workflows/test.yml/badge.svg?branch=lesson11)](https://github.com/Namashikate/mypkg/actions/workflows/test.yml)
 
 # リポジトリ概要
 ロボットシステム学課題2提出用リポジトリ
