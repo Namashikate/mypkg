@@ -17,7 +17,7 @@ git clone -b lesson11 https://github.com/Namashikate/mypkg.git
 * listener.py
 サブスクライバー。`/countup`トピックからのメッセージを受け取り表示する。
 ## launch
-*talk_listen.launch.py
+* talk_listen.launch.py
 `talker.py`と`listener.py`を同時に実行し表示する。
 
 # 使用方法
@@ -34,21 +34,27 @@ git clone -b lesson11 https://github.com/Namashikate/mypkg.git
 [INFO] [1703656834.505891763] [listener]: Listen: 87
 [INFO] [1703656835.006010521] [listener]: Listen: 88
 ```
-任意の数nまでの合計値Sを計算し、偶数か奇数かの判別を行います.
-
-* 具体的な使用例
-
+## talk_listen.launch.pyを使った方法
 ```
-seq 10 | ./plus
-55 奇数
+$ ros2 launch mypkg talk_listen.launch.py
+[INFO] [launch]: All log files can be found below /home/kaito/.ros/log/2023-12-27-15-25-41-438554-yawarakanuma-1976
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [1977]
+[INFO] [listener-2]: process started with pid [1979]
+[listener-2] [INFO] [1703658342.381523022] [listener]: Listen: 0
+[listener-2] [INFO] [1703658342.862671223] [listener]: Listen: 1
+[listener-2] [INFO] [1703658343.362729020] [listener]: Listen: 2
+[listener-2] [INFO] [1703658343.862536593] [listener]: Listen: 3
+[listener-2] [INFO] [1703658344.363090467] [listener]: Listen: 4
+[listener-2] [INFO] [1703658344.863053356] [listener]: Listen: 5
+[listener-2] [INFO] [1703658345.363082941] [listener]: Listen: 6
 ```
-
 ## 必要なソフトウェア
 * Python
-  * テスト済みver. 3.7～3.10
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
+* ros2 Hunmble
 
 ## 著作権・ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
