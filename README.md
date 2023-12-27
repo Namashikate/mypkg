@@ -1,21 +1,16 @@
-# robosys2023
+# mypkg
 
 # リポジトリ概要
-ロボットシステム学課題提出用リポジトリ
+ロボットシステム学課題2提出用リポジトリ
 
 # インストール方法
 * ターミナルを開いた後、以下のコマンドにクローンします.
 
 ``` 
-git clone https://github.com/Namashikate/robosys2023.git 
-```
-* クローンをした後、ディレクトリ"robosys2023"に移動します.
-
-``` 
-cd robosys2023 
+git clone -b lesson11 https://github.com/Namashikate/mypkg.git 
 ```
 
-# plusコマンド
+
 ![test](https://github.com/Namashikate/robosys2023/actions/workflows/test.yml/badge.svg)
 
 標準入力から読み込んだ数字を足した後、合計値が偶数か奇数かを判別します.
