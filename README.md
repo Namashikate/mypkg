@@ -10,17 +10,29 @@
 ``` 
 git clone -b lesson11 https://github.com/Namashikate/mypkg.git 
 ```
+# 使用するノード説明
+## mypkg
+* talker.py
+パブリッシャー。0.5秒ごとに数字を1カウントし、`/countup`トピックを通してメッセージを送信する。
+* listener.py
+サブスクライバー。`/countup`トピックからのメッセージを受け取り表示する。
+## launch
+*talk_listen.launch.py
+`talker.py`と`listener.py`を同時に実行し表示する。
 
-
-![test](https://github.com/Namashikate/robosys2023/actions/workflows/test.yml/badge.svg)
-
-標準入力から読み込んだ数字を足した後、合計値が偶数か奇数かを判別します.
-
-* 使用方法
+# 使用方法
+## talker.pyとlistener.pyを使った方法
 
 ```
-seq n | ./plus
-S (偶数or奇数)
+端末1$ ros2 run mypkg talker
+端末2$ ros2 run mypkg listener
+[INFO] [1703656832.069725697] [listener]: Listen: 82
+[INFO] [1703656832.505912489] [listener]: Listen: 83
+[INFO] [1703656833.005927325] [listener]: Listen: 84
+[INFO] [1703656833.506021493] [listener]: Listen: 85
+[INFO] [1703656834.005683186] [listener]: Listen: 86
+[INFO] [1703656834.505891763] [listener]: Listen: 87
+[INFO] [1703656835.006010521] [listener]: Listen: 88
 ```
 任意の数nまでの合計値Sを計算し、偶数か奇数かの判別を行います.
 
