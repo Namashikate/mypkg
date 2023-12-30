@@ -4,11 +4,16 @@
 # リポジトリ概要
 ロボットシステム学課題2提出用リポジトリ
 
-# インストール方法
-* ターミナルを開いた後、以下のコマンドにクローンします.
+# 事前準備
+* ターミナルを開いた後、以下のコマンドを実行します.
 
-``` 
-git clone -b lesson11 https://github.com/Namashikate/mypkg.git 
+```
+$ mkdir -p ros2_ws/src
+$ cd ros2_ws/src
+$ git clone -b lesson11 https://github.com/Namashikate/mypkg.git
+$ cd ~/ros2_ws
+$ colcon build
+$ source ~/.bashrc 
 ```
 # 使用するノード説明
 ## mypkg
@@ -34,6 +39,7 @@ git clone -b lesson11 https://github.com/Namashikate/mypkg.git
 [INFO] [1703656834.505891763] [listener]: Listen: 87
 [INFO] [1703656835.006010521] [listener]: Listen: 88
 ```
+実行後、不具合がなければ以上のように出力される。
 ## talk_listen.launch.pyを使った方法
 ```
 $ ros2 launch mypkg talk_listen.launch.py
@@ -49,12 +55,14 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703658344.863053356] [listener]: Listen: 5
 [listener-2] [INFO] [1703658345.363082941] [listener]: Listen: 6
 ```
+実行後、不具合がなければ以上のように出力される。
 ## 必要なソフトウェア
 * Python
+* ROS2
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
-* ros2 Humble
+* ROS2 Humble
 
 ## 著作権・ライセンス
 * このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます．
