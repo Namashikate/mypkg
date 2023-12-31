@@ -1,4 +1,6 @@
 #!/usr/bin/bash -xv
+#SPDX-FileCopyrightText: 2023 Kaito Suzuki
+#SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
 [ "$1" != "" ] && dir="$1"
