@@ -2,7 +2,7 @@
 [![test](https://github.com/Namashikate/mypkg/actions/workflows/test.yml/badge.svg?branch=lesson11)](https://github.com/Namashikate/mypkg/actions/workflows/test.yml)
 
 # リポジトリ概要
-ロボットシステム学課題2提出用リポジトリ
+ロボットシステム学 課題2提出用リポジトリ
 
 # 事前準備
 * ターミナルを開いた後、以下のコマンドを実行します.
@@ -15,7 +15,7 @@ $ cd ~/ros2_ws
 $ colcon build
 $ source ~/.bashrc 
 ```
-# 使用するノード説明
+# 使用するノードの説明
 ## mypkg
 * talker.py
 パブリッシャー。0.5秒ごとに数字を1カウントし、`/countup`トピックを通してメッセージを送信する。
@@ -57,7 +57,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 ```
 実行後、不具合がなければ以上のように出力される。
 ## 必要なソフトウェア
-* Python
+* Python3.10
 * ROS2
 
 ## テスト環境
